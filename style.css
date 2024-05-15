@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primery-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+
+body{
+    font-family: 'poppins','sans-serif';
+    color:var(--primery-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'roboto','sans-serif';
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+/* utility-classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color: var(--primery-text-color);
+}
+
+.hover-link:hover{
+    color: var(--accent-color);
+}
+
+.primery-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-in-out;
+}
+.primery-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primery-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-in-out; 
+}
+.secondary-button:hover{
+    border-color: var(--accent-color-dark);
+    color: var(--accent-color) !important;
+}
+
+/* top-banner */
+
+.top-banner{
+    background-color: #4fb3d4;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* nav-bar */
+
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/* header */
+
+.header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+.header-right img{
+    width: 600px;
+}
+.get-start{
+    margin-top: 20px;
+}
+
+/* companies-section */
+
+.companies-header{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--primery-text-color);
+}
+.logos-section{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 46px;
+}
+
+/* feture-section */
+
+.feture-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image:url('asset\ 41.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(175, 192, 205,0.09);
+}
+.feture-heder{
+    text-align: center;
+}
+.feture-heading-text{
+    margin-bottom: 20px;
+}
+
+/* feture-section */
+
+.feture-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+.feture-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* big-feture-section */
+
+.big-feture-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-feture-container{
+    gap: 30px;
+}
+.feture-img-section img{
+    width: 100%;
+}
+.feture-discription{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* example-section */
+
+.example-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+.example-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url('asset\ 37.jpeg');
+}
+.example-card:hover{
+    box-shadow: 2px 2px 10px #888;
+}
+.example-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url('asset\ 38.jpeg');
+}
+.example-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url('asset\ 39.jpeg');
+}
+.example-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url('asset\ 36.jpeg');
+    background-size: cover;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    
+}
+.cta-section{
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section) 0;
+}
